@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MicroservicesWithRabbitMQ.Banking.Application\MicroservicesWithRabbitMQ.Banking.Application.csproj" />
+    <ProjectReference Include="..\MicroservicesWithRabbitMQ.Banking.Data\MicroservicesWithRabbitMQ.Banking.Data.csproj" />
+    <ProjectReference Include="..\MicroservicesWithRabbitMQ.Domain.Core\MicroservicesWithRabbitMQ.Domain.Core.csproj" />
+    <ProjectReference Include="..\MicroservicesWithRabbitMQ.Infrastructure.Bus\MicroservicesWithRabbitMQ.Infrastructure.Bus.csproj" />
+    <ProjectReference Include="..\MicroservicesWithRabbitMQ.Transfer.Application\MicroservicesWithRabbitMQ.Transfer.Application.csproj" />
+    <ProjectReference Include="..\MicroservicesWithRabbitMQ.Transfer.Data\MicroservicesWithRabbitMQ.Transfer.Data.csproj" />
+  </ItemGroup>
+
+</Project>
